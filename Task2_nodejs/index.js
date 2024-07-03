@@ -1,0 +1,21 @@
+const fse=require("fs-extra");
+fse.mkdirSync('folder1', err=>{
+    if (err) throw err;
+    console.log('Create dir folder1');
+});
+console.log('Create dir folder1');
+fse.writeFileSync('./folder1/file1.txt',  'Hello Node.js!!'); 
+console.log('Write file1.txt on the folder1!');
+fse.mkdirSync('folder2');
+fse.moveSync('./folder1/file1.txt', './folder2/file1.txt');
+console.log('Move file1.txt!');
+fse.mkdirSync('folder3');
+fse.copyFileSync('./folder2/file1.txt', './folder3/file1.txt');
+console.log('Copy file1 to the folder3');
+fse.emptyDirSync('folder2');
+fse.emptyDirSync('folder3');
+console.log('Delete all files!');
+fse.removeSync('folder1');
+fse.removeSync('folder2');
+fse.removeSync('folder3');
+console.log('All folders are deleted!');
