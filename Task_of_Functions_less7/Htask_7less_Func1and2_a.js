@@ -45,7 +45,6 @@ function splitNumberInRandomTerms(num, amount){
             currentSum=currentSum+numRandom;
             numRandom=0;
                         }
-       
     }
         while (currentSum!=num )
         let len=arrTerms.length;
