@@ -45,19 +45,7 @@ function splitNumberInRandomTerms(num, amount){
             currentSum=currentSum+numRandom;
             numRandom=0;
                         }
-        /*else{
-            if(currentSum===num){
-                arrTerms.push(0);
-                currentSum=currentSum+0;
-                continue;
-            }
-           /* else { if(currentSum>num){
-                arrTerms.push(-Math.abs(currentSum-num));
-                currentSum=currentSum-Math.abs(currentSum-num);
-                console.log(-Math.abs(currentSum-num));
-                continue;}
-            }
-        }*/
+       
     }
         while (currentSum!=num )
         let len=arrTerms.length;
