@@ -1,0 +1,12 @@
+{
+    "name": "homework_by_classes",
+    "version": "1.0.0",
+    "description": "A project to manage New Year gifts with sweets",
+    "main": "index.js",
+    "type": "module",
+    "scripts": {
+      "start": "node index.js"
+    },
+    "author": "Dmitry",
+    "license": "MIT1"
+  }
